@@ -175,11 +175,8 @@ nav .active {
   animation: pulse 1.8s infinite;
 }
 
-/* حركة بسيطة: النقطة تكبر وتخف ثم ترجع كأنها نبضة */
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.4); opacity: 0.6; }
-}
+
+
 
 h1 {
   font-size: 48px;
