@@ -4,6 +4,7 @@
   --purple-tint: #eee7f5;
   --text: #222;
   --muted: #666;
+  /* لون الحدود */
   --line: #ddd;
   --bg: #f8f6f2;
 
@@ -251,12 +252,7 @@ nav .active {
   background: var(--purple);
   border-radius: 50%;
   margin-right: 6px;
-  animation: pulse 1.8s infinite;
-}
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.4); opacity: 0.6; }
 }
 
 h1 {
@@ -310,8 +306,8 @@ h1 {
   background: #e7ddea;
   padding: 10px;
   border-radius: 20px;
-  margin-inline: auto;
-  overflow: hidden;
+
+
 }
 
 .photo-frame img {
@@ -319,7 +315,7 @@ h1 {
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  transition: transform 0.3s;
+
 }
 
 .photo-frame:hover img {
@@ -375,11 +371,6 @@ h1 {
    بدون ما نحتاج نكتب media query خاصة فيها
    =============================== */
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
 
 .project-image-wrapper {
   height: 220px;
@@ -530,12 +521,7 @@ h1 {
   text-align: center;
 }
 
-/* ===============================
-   الريسبونسف
-   بفضل auto-fit بالـ projects/stack، ما عاد محتاجين نكرر
-   قواعدهم هون — خليناها breakpoint وحدة بس للأشياء
-   اللي فعلاً لازم تتغير يدوياً (bento + الأحجام)
-   =============================== */
+
 
 @media (max-width: 900px) {
   .bento-grid {
