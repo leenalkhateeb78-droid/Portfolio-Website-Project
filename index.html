@@ -1,354 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEEN ALKHATEEB | Full-Stack Software Engineer</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="topbar">
-    <a href="#home" class="logo">
-      <span class="logo-icon ">L</span>
-      Leen<span class="brand-dot">.</span>
-    </a>
-    <nav id="navLinks">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#stack">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <div class="badge">
-            <span class="pulse-dot"></span>
-            Full-Stack Software Engineer
-          </div>
-          <h1>
-            Hi, I'm <span class="gradient-text" id="heroName">Leen</span>
-            <br><span id="heroLine1">I craft digital </span>
-            <br><span class="hero-highlight" id="heroLine2">experiences.</span>
-          </h1>
-          <p class="hero-desc">
-            Full-Stack Software Engineering graduate skilled in building responsive interfaces, designing RESTful APIs, and delivering real products with Agile teams from concept to launch.
-          </p>
-          <div class="hero-actions">
-            <a href="#work" class="btn-primary">
-              View Projects
-            </a>
-            <a href="#contact" class="btn-secondary">
-              Get in Touch
-            </a>
-            <a href="cv.pdf" class="btn-secondary" download>
-              Download CV 
-            </a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <strong>03</strong>
-              <span>Trainee Programs</span>
-            </div>
-            <div class="hero-stat">
-              <strong>15+</strong>
-              <span>Technologies</span>
-            </div>
-            <div class="hero-stat">
-              <strong>06</strong>
-              <span>Certifications</span>
-            </div>
-          </div>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#home" class="logo">Leen</a>
+            <nav class="site-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="photo-frame">
-          <div class="photo-glow"></div>
-          <img src="Leen.jpeg" alt="Leen Yaser Alkhateeb">
-        </div>
-      </div>
-
-      <!-- About / Bento Grid -->
-      <div class="bento-grid" id="about">
-
-        <!-- Main Card -->
-        <div class="bento-main">
-          <div class="bento-content">
-            <h3>Who I Am</h3>
-            <p>I'm <strong>Leen Yaser Alkhateeb</strong>, a Full-Stack Software Engineering graduate from Zarqa University with hands-on experience as a Front-End Developer, Angular Developer, Vue.js Developer, and ASP.NET Developer through internships, academic training, and Agile team projects.</p>
-            <p>Skilled in building responsive, component-based user interfaces, designing RESTful APIs, and modeling relational databases, with a solid grounding in object-oriented design, the full SDLC, and Agile/Scrum practices.</p>
-          </div>
-        </div>
-
-        <!-- Location Card -->
-        <div class="bento-location">
-          <div class="bento-glow"></div>
-          <div class="location-visual"></div>
-          <div class="location-text">
-            <span>Based in</span>
-            <strong>Amman, Jordan</strong>
-          </div>
-        </div>
-
-        <!-- Education Card -->
-        <div class="bento-edu">
-          <div class="bento-glow"></div>
-          <div class="edu-icon"></div>
-          <div class="edu-text">
-            <span>BSc in Software Engineering</span>
-            <strong>Zarqa University (2026)</strong>
-          </div>
-        </div>
-
-        <!-- Interests Card -->
-        <div class="bento-interests">
-          <div class="bento-glow"></div>
-          <span class="interests-label">Passionate about</span>
-          <div class="interest-tags">
-            <span class="interest-tag">UI/UX Design</span>
-            <span class="interest-tag">Clean Code</span>
-            <span class="interest-tag">Agile / Scrum</span>
-            <span class="interest-tag">Full-Stack Architecture</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section work" id="work">
-      <div class="container">
-
-        <header class="section-header">
-          <span class="section-num">01</span>
-          <div>
-            <p class="section-label">Projects</p>
-            <h2>Selected <span class="gradient-text">builds.</span></h2>
-          </div>
-        </header>
-
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-glow"></div>
-            <div class="project-content">
-              <div class="project-image-wrapper">
-                <img src="baliditi.jpeg" alt="Baliditi project preview">
-              </div>
-              <div class="project-meta">
-                <span class="project-tag">Crown Prince Award Competition</span>
-                <span class="project-role">UX/UI Designer</span>
-              </div>
-              <h3>Baliditi</h3>
-              <p>Designed user-centered interfaces for a Flutter-based mobile municipal services application, from wireframes to high-fidelity prototypes in Figma. Mapped user flows, iterated based on accessibility principles, and partnered closely with developers.</p>
-              <div class="tech-list">
-                <span>Flutter</span>
-                <span>Figma</span>
-                <span>UI/UX Design</span>
-                <span>User Flows</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-glow"></div>
-            <div class="project-content">
-              <div class="project-image-wrapper">
-                <img src="Frame.png" alt="Lightside project preview">
-              </div>
-              <div class="project-meta">
-                <span class="project-tag">Graduation Project</span>
-                <span class="project-role">Team Leader &amp; System Developer</span>
-              </div>
-              <h3>Lightside</h3>
-              <p>Led a cross-functional development team building a React Native mobile application from concept to working prototype, owning planning, task delegation, and delivery. Designed the core system architecture and business logic underpinning the platform, applying Agile/Scrum practices (completed with a final graduation grade of 91%.</p>
-              <div class="tech-list">
-                <span>React Native</span>
-                <span>Agile/Scrum</span>
-                <span>System Architecture</span>
-                <span>Mobile Development</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="section experience" id="experience">
-      <div class="container">
-
-        <header class="section-header">
-          <span class="section-num">02</span>
-          <div>
-            <p class="section-label">Work Experience</p>
-            <h2>Practical training &amp; <span class="gradient-text">experience.</span></h2>
-          </div>
-        </header>
-
-        <div class="timeline">
-          <div class="timeline-line"></div>
-
-          <!-- Experience 1: SITECH -->
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="bento-glow"></div>
-            <div class="exp-header">
-              <div class="exp-role-info">
-                <h3>Front-End Developer Trainee</h3>
-                <div class="exp-company-location">
-                  <span class="company-name">SITECH</span>
-                  <span>Amman Jordan</span>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Hi, I'm Leen Alkhateeb</h1>
+                    <p class="title">Full-Stack Software Engineer</p>
+                    <p class="bio">Full-Stack Software Engineering graduate actively seeking a Junior Full-Stack Developer position. Hands-on experience as a Front-End, Angular, Vue.js, 
+                    and ASP.NET Developer through internships, academic training, and Agile team projects. Skilled in building responsive, component-based UIs, 
+                    designing RESTful APIs, and modeling relational databases, with a solid grounding in OOP design, the full SDLC, and Agile/Scrum practices. 
+                    Demonstrated ability to lead cross-functional teams and deliver prototypes under competitive deadlines.</p>
+                    <a href="#projects" class="btn">View My Work</a>
                 </div>
-              </div>
-            </div>
-            <ul class="exp-details-list">
-              <li>Developed responsive, cross-browser web applications as an Angular and Vue.js Developer, improving usability and front-end performance.</li>
-              <li>Architected reusable, component-based UI structures following software engineering best practices, improving code maintainability and reducing duplication.</li>
-              <li>Collaborated with back-end engineers and UI/UX designers in an Agile environment to translate requirements into intuitive, user-focused interfaces.</li>
-              <li>Optimized front-end performance and rendering efficiency to ensure a consistent user experience across browsers and devices.</li>
-            </ul>
-            <div class="exp-tags">
-              <span>Vue.js</span>
-              <span>TypeScript</span>
-              <span>JavaScript</span>
-              <span>Responsive UI</span>
-              <span>Agile/Scrum</span>
-            </div>
-          </article>
-
-          <!-- Experience 2: Estarta -->
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="bento-glow"></div>
-            <div class="exp-header">
-              <div class="exp-role-info">
-                <h3>Software Engineering Trainee</h3>
-                <div class="exp-company-location">
-                  <span class="company-name">Estarta</span>
-                  <span>Amman Jordan</span>
+                <div class="hero-image-wrapper">
+                    <img src="assets/Leen.jpeg" alt="LEEN PROFILE" class="profile-img">
                 </div>
-              </div>
             </div>
-            <ul class="exp-details-list">
-              <li>Completed structured software engineering training covering industry-standard tools, Agile workflows, and development best practices.</li>
-              <li>Applied Software Development Life Cycle (SDLC) methodologies alongside technical teams on real-world enterprise scenarios.</li>
-              <li>Gained hands-on exposure to IT operations and infrastructure support within a large-scale enterprise environment.</li>
-              <li>Identified opportunities to streamline development workflows, deepening understanding of enterprise software systems.</li>
-            </ul>
-            <div class="exp-tags">
-              <span>Software Engineering</span>
-              <span>Agile Workflows</span>
-              <span>SDLC Methodologies</span>
-              <span>IT Operations</span>
-              <span>Enterprise Systems</span>
+        </section>
+    
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <img src="assets/about-img.jpg" alt="Working setup" class="about-img">
+                    </div>
+                    <div class="about-content">
+                        <p>I am a passionate Full-Stack Software Engineer based in Amman, Jordan, holding a Bachelor's degree in Software Engineering from Zarqa University.</p>
+                        <p>With hands-on experience spanning front-end frameworks (Angular, Vue.js, React Native), back-end development (ASP.NET Core, RESTful APIs), and UI/UX design (Figma, Flutter), I love turning complex technical challenges into intuitive, high-performance applications.</p>
+                    </div>
+                </div>
             </div>
-          </article>
+        </section>
 
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/Frame.png" alt="Lightside Project" class="project-thumb">
+                        </div>
+                        <div class="project-body">
+                            <h3>Lightside (Graduation Project)</h3>
+                            <p>Led a cross-functional team building a React Native app from concept to prototype, owning planning and delivery with a final grade of 91%.</p>
+                        </div>
+                        <div class="project-footer-tags">
+                            <span>React Native</span>
+                            <span>Agile/Scrum</span>
+                            <span>System Architecture</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/baliditi.jpeg" alt="Baliditi Project" class="project-thumb">
+                        </div>
+                        <div class="project-body">
+                            <h3>Baliditi</h3>
+                            <p>Designed user-centered interfaces for a Flutter-based municipal services app for competition submission, creating wireframes and high-fidelity Figma prototypes.</p>
+                        </div>
+                        <div class="project-footer-tags">
+                            <span>Flutter</span>
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p>I'm currently open to new opportunities and collaborations. Feel free to send a message using the form or connect through my social links.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/leenalkhateeb78-droid" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/in/leen-alkhateeb-6087aa320" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:leenalkhateeb78@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Leen Alkhateeb. All rights reserved.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section stack" id="stack">
-      <div class="container">
-
-        <header class="section-header">
-          <span class="section-num">03</span>
-          <div>
-            <p class="section-label">Technical Skills</p>
-            <h2>My tech <span class="gradient-text">stack.</span></h2>
-          </div>
-        </header>
-
-        <div class="stack-grid">
-          <div class="stack-card">
-            <div class="stack-icon">PL</div>
-            <h3>Programming Languages</h3>
-            <div class="tech-list">
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>C#</span>
-              <span>Java</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <div class="stack-icon">FE</div>
-            <h3>Frontend</h3>
-            <div class="tech-list">
-              <span>Angular</span>
-              <span>Vue.js</span>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>Bootstrap</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <div class="stack-icon">BE</div>
-            <h3>Backend &amp; Database</h3>
-            <div class="tech-list">
-              <span>ASP.NET Core</span>
-              <span>RESTful APIs</span>
-              <span>SQL Server</span>
-            </div>
-          </div>
-
-          <div class="stack-card">
-            <div class="stack-icon">TD</div>
-            <h3>Tools &amp; Methodologies</h3>
-            <div class="tech-list">
-              <span>Git</span>
-              <span>GitHub</span>
-              <span>Visual Studio</span>
-              <span>Figma</span>
-              <span>Agile / Scrum</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="contact-bg" aria-hidden="true"></div>
-      <div class="container">
-        <div class="contact-inner">
-          <span class="section-num">04</span>
-          <p class="section-label">Contact</p>
-          <h2 class="giant-heading">Let's build something<br><span class="gradient-text">together.</span></h2>
-          <p class="contact-desc">Open to full-stack engineering roles, internships, and collaborative software projects.</p>
-
-          <div class="contact-actions">
-            <a href="mailto:leenalkhateeb78@gmail.com" class="contact-email">
-              leenalkhateeb78@gmail.com
-            </a>
-          </div>
-
-          <div class="contact-links">
-            <a href="https://github.com/leenalkhateeb78-droid" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/leen-alkhateeb-6087aa320" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Leen Alkhateeb. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>
