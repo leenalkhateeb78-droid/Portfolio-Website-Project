@@ -6,6 +6,8 @@
     <title>LEEN ALKHATEEB | Full-Stack Software Engineer</title>
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon for tech-stack logos (Angular, Flutter, ASP.NET Core, SQL Server...) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon/devicon.min.css">
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,11 +15,12 @@
 
     <header class="site-header">
         <div class="nav-container">
-            <a href="#home" class="logo">Leen</a>
+            <a href="#home" class="logo">LA</a>
             <nav class="site-nav">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -58,6 +61,53 @@
             </div>
         </section>
 
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-grid">
+
+                    <article class="experience-card">
+                        <div class="experience-header">
+                            <h3>Front-End Developer Trainee</h3>
+                            <span class="experience-date">Apr 2026 – Jul 2026</span>
+                        </div>
+                        <p class="experience-company">SITECH · Amman, Jordan</p>
+                        <ul>
+                            <li>Developed responsive, cross-browser web applications as an Angular and Vue.js Developer, improving usability and front-end performance.</li>
+                            <li>Architected reusable, component-based UI structures following best practices, improving maintainability.</li>
+                            <li>Collaborated with back-end engineers and UI/UX designers in an Agile environment to deliver user-focused interfaces.</li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-header">
+                            <h3>ASP.NET Developer Trainee</h3>
+                            <span class="experience-date">Mar 2026 – Jun 2026</span>
+                        </div>
+                        <p class="experience-company">Princess Sumaya University for Technology (PSUT) · Amman, Jordan</p>
+                        <ul>
+                            <li>Built full-stack web applications end-to-end, pairing an ASP.NET Core back end with an Angular front end.</li>
+                            <li>Designed and integrated RESTful APIs with relational database systems (SQL Server) to support core features.</li>
+                            <li>Applied object-oriented design and modern development practices to strengthen code quality and maintainability.</li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-header">
+                            <h3>Software Engineering Trainee</h3>
+                            <span class="experience-date">Sep 2025 – Nov 2025</span>
+                        </div>
+                        <p class="experience-company">Estarta Solutions · Amman, Jordan</p>
+                        <ul>
+                            <li>Completed structured software engineering training covering industry-standard tools, Agile workflows, and best practices.</li>
+                            <li>Applied SDLC methodologies alongside technical teams on real-world enterprise scenarios.</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="projects-section">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
@@ -72,9 +122,9 @@
                             <p>Led a cross-functional team building a React Native app from concept to prototype, owning planning and delivery with a final grade of 91%.</p>
                         </div>
                         <div class="project-footer-tags">
-                            <span>React Native</span>
-                            <span>Agile/Scrum</span>
-                            <span>System Architecture</span>
+                            <span class="tech-icon" title="React Native"><i class="devicon-react-original"></i></span>
+                            <span class="tech-icon" title="Agile/Scrum"><i class="fa-solid fa-arrows-rotate"></i></span>
+                            <span class="tech-icon" title="System Architecture"><i class="fa-solid fa-sitemap"></i></span>
                         </div>
                     </article>
 
@@ -88,9 +138,25 @@
                             <p>Designed user-centered interfaces for a Flutter-based municipal services app for competition submission, creating wireframes and high-fidelity Figma prototypes.</p>
                         </div>
                         <div class="project-footer-tags">
-                            <span>Flutter</span>
-                            <span>Figma</span>
-                            <span>UI/UX</span>
+                            <span class="tech-icon" title="Flutter"><i class="devicon-flutter-plain"></i></span>
+                            <span class="tech-icon" title="Figma"><i class="devicon-figma-plain"></i></span>
+                            <span class="tech-icon" title="UI/UX Design"><i class="fa-solid fa-pen-ruler"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/hrms-overview.webp" alt="HRMS Project" class="project-thumb">
+                        </div>
+                        <div class="project-body">
+                            <h3>HRMS - Human Resource Management System</h3>
+                            <p>Built a full-stack HRMS to manage employees, attendance, and payroll, pairing an ASP.NET Core back end with an Angular front end and a SQL Server database.</p>
+                        </div>
+                        <div class="project-footer-tags">
+                            <span class="tech-icon" title="Angular"><i class="devicon-angular-plain"></i></span>
+                            <span class="tech-icon" title="ASP.NET Core"><i class="devicon-dotnetcore-plain"></i></span>
+                            <span class="tech-icon" title="SQL Server"><i class="devicon-microsoftsqlserver-plain"></i></span>
                         </div>
                     </article>
                 </div>
